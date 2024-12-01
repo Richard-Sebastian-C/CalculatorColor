@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="keyboard">
+                <button id="C" class="operator">C</button>
+                <button id="CE" class="operator">CE</button>
+                <button id="%" class="operator">%</button>
+                <button id="+" class="operator">+</button>
+                <button id="7" class="number">7</button>
+                <button id="8" class="number">8</button>
+                <button id="9" class="number">9</button>
+                <button id="*" class="operator">*</button>
+                <button id="4" class="number">4</button>
+                <button id="5" class="number">5</button>
+                <br>
+                <button id="6" class="number">6</button>
+                <button id="-" class="operator">-</button>
+                <button id="1" class="number">1</button>
+                <button id="2" class="number">2</button>
+                <button id="3" class="number">3</button>
+                <button id="+" class="operator">+</button>
+                <button id="empty" class="empty"></button>
+                <button id="0" class="number">0</button>
+                <button id="empty" class="empty"></button>
+                <button id="=" class="operator">=</button>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: black;
+        }
+
+        #container {
+            width: 1000px;
+            height: 520px;
+            background-color: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(bgImg.jpg);
+            margin: 20px auto;
+        }
+
+        #calculator {
+            width: 320px;
+            height: 520px;
+            background-color: #eaedef;
+            margin: 0 auto;
+            top: 20px;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0.4px 8px 0 rgba(0, 0, 0, 0.2), 0.6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #result{
+            height:120px;
+        }
+
+        #keyboard{
+            height: 120px;
+        }
+
+        .operator, .number, .empty{
+            width: 50px;
+            height: 50px;
+            margin: 15px;
+            float: left;
+            border-radius: 50%;
+            border-width: 0;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .number, .empty{
+            background-color: #eaedef;
+        }
+
+        .number,.operator{
+            cursor: pointer;
+        }
+
+        .operator:active, .number:active{
+            font-size: 13px;
+        }
+
+        .operator:focus,.number:focus,.empty:focus{
+            outline:0;
+        }
+
+        #result{
+            height: 20px;
+        }
+
+        #history{
+            text-align: right;
+            height: 20px;
+            margin: 0 20px;
+            padding-top: 20px;
+            font-size: 15px;
+            color: #919191;
+        }
+
+        button:nth-child(1){
+            font-size: 20px;
+            background-color: #7fff7f;
+        }
+
+        button:nth-child(2){
+            font-size: 20px;
+            background-color: #ed5656;
+        }
+
+        button:nth-child(3){
+            font-size: 20px;
+            background-color: #edde56;
+        }
+        
+        button:nth-child(4){
+            font-size: 20px;
+            background-color: #20b2aa;
+        }
+
+        button:nth-child(5){
+            font-size: 20px;
+            background-color: #882ea3;
+        }
+        
+        button:nth-child(6){
+            font-size: 20px;
+            background-color: #ed56b8;
+        }
+
+        button:nth-child(7){
+            font-size: 20px;
+            background-color: #56edae;
+        }
+
+        button:nth-child(8){
+            font-size: 20px;
+            background-color: #ffa500;
+        }
+
+        button:nth-child(9){
+            font-size: 20px;
+            background-color: #edc256;
+        }
+
+        button:nth-child(10){
+            font-size: 20px;
+            background-color: #1b9558;
+        }
+
+        button:nth-child(12){
+            font-size: 20px;
+            background-color: #bb56ed;
+        }
+
+        button:nth-child(13){
+            font-size: 20px;
+            background-color: #f08080;
+        }
+
+        button:nth-child(14){
+            font-size: 20px;
+            background-color: #8bb01a;
+        }
+
+        button:nth-child(15){
+            font-size: 20px;
+            background-color: #387858;
+        }
+
+        button:nth-child(16){
+            font-size: 20px;
+            background-color: #ff01ea;
+        }
+
+        button:nth-child(17){
+            font-size: 20px;
+            background-color: #7d93e0;
+        }
+
+        button:nth-child(19){
+            font-size: 20px;
+            background-color: #e37602;
+        } 
+        
+        button:nth-child(21){
+            font-size: 20px;
+            background-color: #9477af;
+        }
+      
+    </style>
+
+</body>
+
+</html>
